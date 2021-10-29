@@ -1,0 +1,2 @@
+2021-02-23 17:04:49.399 30209-30209/com.decidone.messenger D/MyNotificationListener: onNotificationPosted ~  packageName: com.kakao.talk id: 2 postTime: 1614067489151 title: user-name text : user-text subText: talk-room-name
+2021-02-23 17:04:51.894 30209-30209/com.decidone.messenger D/MyNotificationListener: onNotificationPosted ~  packageName: com.kakao.talk id: 1 postTime: 1614067491667 title: null text : null subText: 1개의 안 읽은 메시지
