@@ -83,7 +83,12 @@ public class KakaoNotificationListener extends NotificationListenerService {
             if(text != null && pre_text != null && pre_text2 != null){
                 if(subText.toString().contains(TALK_ROOM) && !text.toString().equals(pre_text)){
                     //메시지를 바로 밴드로 보낼 때
-                    if(title.contains(SENDER)){
+                    if(title.contains(SENDER)) {
+                        //특정 사용자의 메시지를 밴드로 보낼 때
+                        send(BAND_KEY, SENDER + ": " + text.toString(), true);
+                        pre_text = SENDER + ": " + text.toString();
+                    }else{
+                        //사용자 관계없이 메시지를 바로 밴드로 보낼 때
                         send(BAND_KEY, text.toString(), true);
                         pre_text = "" + text.toString();
                     }
