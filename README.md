@@ -18,7 +18,7 @@
 
 ## How To Use
 - [밴드 개발자 센터](https://developers.band.us/develop/guide/api) BAND Open API 서비스 등록
-- 일부 하드코딩 필요
+- 사용 전 약간의 코드 수정 필요
 ```sh
 app\src\main\java\com\decidone\messenger\KakaoNotificationListener.java
   - ACCESS_TOKEN  -> BAND ACCESS TOKEN
